@@ -647,7 +647,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -823,7 +822,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -864,7 +862,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -932,7 +929,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -1126,7 +1122,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -1239,7 +1234,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -1325,7 +1319,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -1375,7 +1368,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -1416,7 +1408,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -1655,7 +1646,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -2261,7 +2251,6 @@
           <th>BR/BA</th>
           <th>Sqft</th>
           <th>Notes</th>
-          <th>Commutes</th>
         </tr>
       </thead>
       <tbody>
@@ -2345,6 +2334,7 @@
     el.classList.toggle('open');
   }
 
+  (function() {
     // Add commute columns to neighborhood tables
     const stuy = '345+Chambers+Street,+New+York,+NY';
     const sinatra = '35-12+35th+Avenue,+Astoria,+NY';
@@ -2431,13 +2421,6 @@
       }
     });
 
-    // Add header to each table
-    document.querySelectorAll('.neighborhood-body thead tr').forEach(tr => {
-      const th = document.createElement('th');
-      th.textContent = '';
-      th.title = 'Citymapper commute links: S=Stuyvesant, F=Sinatra';
-      tr.appendChild(th);
-    });
   })();
 </script>
 
