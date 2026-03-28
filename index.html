@@ -322,11 +322,6 @@
     text-decoration: none;
     margin: 0 2px;
   }
-  .cm-stuy { background: rgba(108, 140, 255, 0.2); color: var(--accent); }
-  .cm-stuy:hover { background: rgba(108, 140, 255, 0.4); text-decoration: none; }
-  .cm-sin { background: rgba(74, 222, 128, 0.2); color: var(--green); }
-  .cm-sin:hover { background: rgba(74, 222, 128, 0.4); text-decoration: none; }
-
   .commute-links { white-space: nowrap; }
   .cm-link {
     display: inline-block;
@@ -339,6 +334,8 @@
   .cm-stuy:hover { background: rgba(108, 140, 255, 0.4); text-decoration: none; }
   .cm-sin { background: rgba(74, 222, 128, 0.2); color: var(--green); }
   .cm-sin:hover { background: rgba(74, 222, 128, 0.4); text-decoration: none; }
+  .cm-link-text { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .cm-link-text:hover { color: #fff; border-bottom-color: #fff; text-decoration: none; }
 
   @media (max-width: 768px) {
     body { padding: 1rem; }
@@ -359,51 +356,6 @@
   <div><strong>Sources:</strong> StreetEasy, Nooklyn, RentHop, Apartments.com</div>
   <div><strong>School 1:</strong> Stuyvesant HS &mdash; 345 Chambers St, Manhattan (Tribeca)</div>
   <div><strong>School 2:</strong> Frank Sinatra School of the Arts &mdash; 35-12 35th Ave, Astoria, Queens</div>
-</div>
-
-<!-- TOP RECOMMENDATIONS -->
-<h2>Top Recommendations</h2>
-<div class="rec-grid">
-  <a class="rec-card-link" href="https://streeteasy.com/building/103-moore-street-brooklyn/3s" target="_blank">
-    <div class="rec-card">
-      <div class="label">Best Brooklyn Value</div>
-      <div class="addr">103/105 Moore St, Williamsburg</div>
-      <div class="price">$4,449 net</div>
-      <div class="desc">10+ units, new 2026 construction, in-unit W/D. ~28 min to Stuyvesant.</div>
-    </div>
-  </a>
-  <a class="rec-card-link" href="https://nooklyn.com/listings/1889-eastern-pkwy-brooklyn-ny-11233-usa-2-bedford-stuyvesant" target="_blank">
-    <div class="rec-card">
-      <div class="label">Best Pet-Friendly</div>
-      <div class="addr">1889 Eastern Pkwy #2, Bed-Stuy</div>
-      <div class="price">$2,850</div>
-      <div class="desc">All pets. Renovated, central AC, exposed brick.</div>
-    </div>
-  </a>
-  <a class="rec-card-link" href="https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene" target="_blank">
-    <div class="rec-card">
-      <div class="label">Best Fort Greene</div>
-      <div class="addr">21 Adelphi St, Fort Greene</div>
-      <div class="price">$3,667 net</div>
-      <div class="desc">Multiple units available. ~25 min to Stuyvesant.</div>
-    </div>
-  </a>
-  <a class="rec-card-link" href="https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20" target="_blank">
-    <div class="rec-card">
-      <div class="label">Best Amenities</div>
-      <div class="addr">1057 Atlantic Ave PH20, Prospect Heights</div>
-      <div class="price">$5,820 net</div>
-      <div class="desc">Penthouse, 35K SF amenities, pets confirmed.</div>
-    </div>
-  </a>
-  <a class="rec-card-link" href="https://streeteasy.com/building/30_96-32-street-astoria/3" target="_blank">
-    <div class="rec-card">
-      <div class="label">Best Astoria Space</div>
-      <div class="addr">30-96 32nd St #3, Astoria</div>
-      <div class="price">$3,799</div>
-      <div class="desc">1,250 sqft townhouse, heat/hot water included.</div>
-    </div>
-  </a>
 </div>
 
 <!-- COMMUTE TABLE -->
@@ -521,21 +473,21 @@
 <div class="ranking-table">
 <table>
   <thead><tr><th>#</th><th>Address</th><th>Neighborhood</th><th>Price</th><th>To Stuy</th><th>To Sinatra</th><th>Worst</th></tr></thead>
-  <tbody>
-    <tr><td>1</td><td><a href="https://streeteasy.com/building/103-moore-street-brooklyn/3s" target="_blank">103/105 Moore St</a></td><td>Williamsburg</td><td class="price">$4,449 net</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
-    <tr><td>2</td><td><a href="https://streeteasy.com/building/163-ludlow-street-new_york/ge" target="_blank">163 Ludlow St #GE</a></td><td>LES</td><td class="price">$5,845 net</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
-    <tr><td>3</td><td><a href="https://streeteasy.com/building/103-mosco-street-new_york/1" target="_blank">103 Mosco St #1</a></td><td>Chinatown</td><td class="price">$6,695</td><td>13 min</td><td>39-44 min</td><td>44 min</td></tr>
-    <tr><td>4</td><td><a href="https://streeteasy.com/building/210-rivington-street-new_york/16" target="_blank">210 Rivington St #16</a></td><td>LES</td><td class="price">$5,799</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
-    <tr><td>5</td><td><a href="https://streeteasy.com/building/30_96-32-street-astoria/3" target="_blank">30-96 32nd St #3</a></td><td>Astoria</td><td class="price">$3,799</td><td>50 min</td><td>10 min</td><td>50 min</td></tr>
-    <tr><td>6</td><td><a href="https://streeteasy.com/building/187-state-street-brooklyn/3" target="_blank">187 State St #3</a></td><td>Dtwn Brooklyn</td><td class="price">$6,250</td><td>25 min</td><td>~53 min</td><td>53 min</td></tr>
-    <tr><td>7</td><td><a href="https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene" target="_blank">21 Adelphi St #4R</a></td><td>Fort Greene</td><td class="price">$3,667 net</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
-    <tr><td>8</td><td><a href="https://streeteasy.com/building/183-park-avenue-brooklyn/2a" target="_blank">183 Park Ave #2A</a></td><td>Fort Greene</td><td class="price">$3,495</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
-    <tr><td>9</td><td><a href="https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20" target="_blank">1057 Atlantic Ave PH20</a></td><td>Prospect Hts</td><td class="price">$5,820 net</td><td>~35 min</td><td>~55 min</td><td>55 min</td></tr>
-    <tr><td>10</td><td><a href="https://streeteasy.com/building/39-bushwick-avenue-brooklyn/1b" target="_blank">39 Bushwick Ave #1B</a></td><td>Williamsburg</td><td class="price">$3,995</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
-    <tr><td>11</td><td><a href="https://nooklyn.com/listings/379-s-5th-st-brooklyn-ny-11211-usa-4r-williamsburg-7c312075-a2ed-47b7-9beb-3c3237f20f4d" target="_blank">379 S 5th St #4R</a></td><td>Williamsburg</td><td class="price">$4,500</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
-    <tr><td>12</td><td><a href="https://streeteasy.com/building/145-noble-street-brooklyn/17" target="_blank">145 Noble St #17</a></td><td>Greenpoint</td><td class="price">$4,599</td><td>45 min</td><td>37-39 min</td><td>45 min</td></tr>
-    <tr><td>13</td><td><a href="https://streeteasy.com/building/3-quincy-street-brooklyn/1f" target="_blank">3 Quincy St #1F</a></td><td>Clinton Hill</td><td class="price">$4,750</td><td>~32 min</td><td>~56 min</td><td>56 min</td></tr>
-    <tr><td>14</td><td><a href="https://streeteasy.com/building/41_24-29-street-long_island_city/4a" target="_blank">41-24 29th St #4A</a></td><td>LIC</td><td class="price">$4,095</td><td>~40 min</td><td>~20 min</td><td>40 min</td></tr>
+  <tbody id="commute-ranking">
+    <tr data-addr="103+Moore+Street,+Brooklyn,+NY"><td>1</td><td><a href="https://streeteasy.com/building/103-moore-street-brooklyn/3s" target="_blank">103/105 Moore St</a></td><td>Williamsburg</td><td class="price">$4,449 net</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
+    <tr data-addr="163+Ludlow+Street,+New+York,+NY"><td>2</td><td><a href="https://streeteasy.com/building/163-ludlow-street-new_york/ge" target="_blank">163 Ludlow St #GE</a></td><td>LES</td><td class="price">$5,845 net</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
+    <tr data-addr="103+Mosco+Street,+New+York,+NY"><td>3</td><td><a href="https://streeteasy.com/building/103-mosco-street-new_york/1" target="_blank">103 Mosco St #1</a></td><td>Chinatown</td><td class="price">$6,695</td><td>13 min</td><td>39-44 min</td><td>44 min</td></tr>
+    <tr data-addr="210+Rivington+Street,+New+York,+NY"><td>4</td><td><a href="https://streeteasy.com/building/210-rivington-street-new_york/16" target="_blank">210 Rivington St #16</a></td><td>LES</td><td class="price">$5,799</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
+    <tr data-addr="30-96+32nd+Street,+Astoria,+Queens,+NY"><td>5</td><td><a href="https://streeteasy.com/building/30_96-32-street-astoria/3" target="_blank">30-96 32nd St #3</a></td><td>Astoria</td><td class="price">$3,799</td><td>50 min</td><td>10 min</td><td>50 min</td></tr>
+    <tr data-addr="187+State+Street,+Brooklyn,+NY"><td>6</td><td><a href="https://streeteasy.com/building/187-state-street-brooklyn/3" target="_blank">187 State St #3</a></td><td>Dtwn Brooklyn</td><td class="price">$6,250</td><td>25 min</td><td>~53 min</td><td>53 min</td></tr>
+    <tr data-addr="21+Adelphi+Street,+Brooklyn,+NY"><td>7</td><td><a href="https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene" target="_blank">21 Adelphi St #4R</a></td><td>Fort Greene</td><td class="price">$3,667 net</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
+    <tr data-addr="183+Park+Avenue,+Brooklyn,+NY"><td>8</td><td><a href="https://streeteasy.com/building/183-park-avenue-brooklyn/2a" target="_blank">183 Park Ave #2A</a></td><td>Fort Greene</td><td class="price">$3,495</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
+    <tr data-addr="1057+Atlantic+Avenue,+Brooklyn,+NY"><td>9</td><td><a href="https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20" target="_blank">1057 Atlantic Ave PH20</a></td><td>Prospect Hts</td><td class="price">$5,820 net</td><td>~35 min</td><td>~55 min</td><td>55 min</td></tr>
+    <tr data-addr="39+Bushwick+Avenue,+Brooklyn,+NY"><td>10</td><td><a href="https://streeteasy.com/building/39-bushwick-avenue-brooklyn/1b" target="_blank">39 Bushwick Ave #1B</a></td><td>Williamsburg</td><td class="price">$3,995</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
+    <tr data-addr="379+South+5th+Street,+Brooklyn,+NY"><td>11</td><td><a href="https://nooklyn.com/listings/379-s-5th-st-brooklyn-ny-11211-usa-4r-williamsburg-7c312075-a2ed-47b7-9beb-3c3237f20f4d" target="_blank">379 S 5th St #4R</a></td><td>Williamsburg</td><td class="price">$4,500</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
+    <tr data-addr="145+Noble+Street,+Brooklyn,+NY"><td>12</td><td><a href="https://streeteasy.com/building/145-noble-street-brooklyn/17" target="_blank">145 Noble St #17</a></td><td>Greenpoint</td><td class="price">$4,599</td><td>45 min</td><td>37-39 min</td><td>45 min</td></tr>
+    <tr data-addr="3+Quincy+Street,+Brooklyn,+NY"><td>13</td><td><a href="https://streeteasy.com/building/3-quincy-street-brooklyn/1f" target="_blank">3 Quincy St #1F</a></td><td>Clinton Hill</td><td class="price">$4,750</td><td>~32 min</td><td>~56 min</td><td>56 min</td></tr>
+    <tr data-addr="41-24+29th+Street,+Long+Island+City,+Queens,+NY"><td>14</td><td><a href="https://streeteasy.com/building/41_24-29-street-long_island_city/4a" target="_blank">41-24 29th St #4A</a></td><td>LIC</td><td class="price">$4,095</td><td>~40 min</td><td>~20 min</td><td>40 min</td></tr>
   </tbody>
 </table>
 </div>
@@ -2480,6 +2432,23 @@
         '<a href="https://citymapper.com/directions?startaddress=' + enc + '&endaddress=' + sinatra + '" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>';
       tr.appendChild(td);
     });
+    // Linkify commute times in ranking table
+    const stuyDest = '345+Chambers+Street,+New+York,+NY';
+    const sinDest = '35-12+35th+Avenue,+Astoria,+NY';
+    document.querySelectorAll('#commute-ranking tr[data-addr]').forEach(tr => {
+      const addr = tr.dataset.addr;
+      const cells = tr.querySelectorAll('td');
+      // cells[4] = To Stuy, cells[5] = To Sinatra
+      if (cells[4]) {
+        const txt = cells[4].textContent;
+        cells[4].innerHTML = '<a href="https://citymapper.com/directions?startaddress=' + addr + '&endaddress=' + stuyDest + '" target="_blank" class="cm-link-text" title="Check on Citymapper">' + txt + '</a>';
+      }
+      if (cells[5]) {
+        const txt = cells[5].textContent;
+        cells[5].innerHTML = '<a href="https://citymapper.com/directions?startaddress=' + addr + '&endaddress=' + sinDest + '" target="_blank" class="cm-link-text" title="Check on Citymapper">' + txt + '</a>';
+      }
+    });
+
     // Add header to each table
     document.querySelectorAll('.neighborhood-body thead tr').forEach(tr => {
       const th = document.createElement('th');
