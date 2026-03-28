@@ -309,31 +309,6 @@
     text-decoration: none;
   }
 
-  .commute-links { white-space: nowrap; }
-  .cm-link {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-decoration: none;
-    margin: 0 2px;
-  }
-  .commute-links { white-space: nowrap; }
-  .cm-link {
-    display: inline-block;
-    width: 22px; height: 22px; line-height: 22px;
-    text-align: center; border-radius: 50%;
-    font-size: 0.65rem; font-weight: 700;
-    text-decoration: none; margin: 0 2px;
-  }
-  .cm-stuy { background: rgba(108, 140, 255, 0.2); color: var(--accent); }
-  .cm-stuy:hover { background: rgba(108, 140, 255, 0.4); text-decoration: none; }
-  .cm-sin { background: rgba(74, 222, 128, 0.2); color: var(--green); }
-  .cm-sin:hover { background: rgba(74, 222, 128, 0.4); text-decoration: none; }
   .cm-link-text { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
   .cm-link-text:hover { color: #fff; border-bottom-color: #fff; text-decoration: none; }
 
@@ -349,7 +324,7 @@
 <body>
 
 <h1>Apartment Hunt - Summer 2026</h1>
-<p class="subtitle">Last updated March 28, 2026 &middot; ~115+ listings across 19 neighborhoods</p>
+<p class="subtitle">Last updated March 28, 2026 &middot; ~150+ listings across 23 neighborhoods</p>
 
 <div class="requirements">
   <div><strong>Requirements:</strong> 3BR / 2BA, max $7,000/mo, pet-friendly, move-in before July 2026</div>
@@ -371,6 +346,12 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>Hell's Kitchen / Midtown West</td>
+      <td>~18 min</td>
+      <td>~22 min</td>
+      <td class="yes-cell">YES</td>
+    </tr>
     <tr>
       <td>Chinatown / Two Bridges</td>
       <td>13 min</td>
@@ -450,6 +431,36 @@
       <td class="yes-cell">YES</td>
     </tr>
     <tr>
+      <td>Upper West Side</td>
+      <td>~28 min</td>
+      <td>~38 min</td>
+      <td class="yes-cell">YES</td>
+    </tr>
+    <tr>
+      <td>Upper East Side</td>
+      <td>~27 min</td>
+      <td>~45 min</td>
+      <td class="yes-cell">YES</td>
+    </tr>
+    <tr>
+      <td>Harlem / Hamilton Heights</td>
+      <td>~30 min</td>
+      <td>~40 min</td>
+      <td class="yes-cell">YES</td>
+    </tr>
+    <tr>
+      <td>Morningside Heights</td>
+      <td>~32 min</td>
+      <td>~42 min</td>
+      <td class="yes-cell">YES</td>
+    </tr>
+    <tr>
+      <td>East Harlem</td>
+      <td>~25 min</td>
+      <td>~35 min</td>
+      <td class="yes-cell">YES</td>
+    </tr>
+    <tr>
       <td>East Village</td>
       <td>~25 min</td>
       <td>~48 min</td>
@@ -474,20 +485,23 @@
 <table>
   <thead><tr><th>#</th><th>Address</th><th>Neighborhood</th><th>Price</th><th>To Stuy</th><th>To Sinatra</th><th>Worst</th></tr></thead>
   <tbody id="commute-ranking">
-    <tr data-addr="103+Moore+Street,+Brooklyn,+NY"><td>1</td><td><a href="https://streeteasy.com/building/103-moore-street-brooklyn/3s" target="_blank">103/105 Moore St</a></td><td>Williamsburg</td><td class="price">$4,449 net</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
-    <tr data-addr="163+Ludlow+Street,+New+York,+NY"><td>2</td><td><a href="https://streeteasy.com/building/163-ludlow-street-new_york/ge" target="_blank">163 Ludlow St #GE</a></td><td>LES</td><td class="price">$5,845 net</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
-    <tr data-addr="103+Mosco+Street,+New+York,+NY"><td>3</td><td><a href="https://streeteasy.com/building/103-mosco-street-new_york/1" target="_blank">103 Mosco St #1</a></td><td>Chinatown</td><td class="price">$6,695</td><td>13 min</td><td>39-44 min</td><td>44 min</td></tr>
-    <tr data-addr="210+Rivington+Street,+New+York,+NY"><td>4</td><td><a href="https://streeteasy.com/building/210-rivington-street-new_york/16" target="_blank">210 Rivington St #16</a></td><td>LES</td><td class="price">$5,799</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
-    <tr data-addr="30-96+32nd+Street,+Astoria,+Queens,+NY"><td>5</td><td><a href="https://streeteasy.com/building/30_96-32-street-astoria/3" target="_blank">30-96 32nd St #3</a></td><td>Astoria</td><td class="price">$3,799</td><td>50 min</td><td>10 min</td><td>50 min</td></tr>
-    <tr data-addr="187+State+Street,+Brooklyn,+NY"><td>6</td><td><a href="https://streeteasy.com/building/187-state-street-brooklyn/3" target="_blank">187 State St #3</a></td><td>Dtwn Brooklyn</td><td class="price">$6,250</td><td>25 min</td><td>~53 min</td><td>53 min</td></tr>
-    <tr data-addr="21+Adelphi+Street,+Brooklyn,+NY"><td>7</td><td><a href="https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene" target="_blank">21 Adelphi St #4R</a></td><td>Fort Greene</td><td class="price">$3,667 net</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
-    <tr data-addr="183+Park+Avenue,+Brooklyn,+NY"><td>8</td><td><a href="https://streeteasy.com/building/183-park-avenue-brooklyn/2a" target="_blank">183 Park Ave #2A</a></td><td>Fort Greene</td><td class="price">$3,495</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
-    <tr data-addr="1057+Atlantic+Avenue,+Brooklyn,+NY"><td>9</td><td><a href="https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20" target="_blank">1057 Atlantic Ave PH20</a></td><td>Prospect Hts</td><td class="price">$5,820 net</td><td>~35 min</td><td>~55 min</td><td>55 min</td></tr>
-    <tr data-addr="39+Bushwick+Avenue,+Brooklyn,+NY"><td>10</td><td><a href="https://streeteasy.com/building/39-bushwick-avenue-brooklyn/1b" target="_blank">39 Bushwick Ave #1B</a></td><td>Williamsburg</td><td class="price">$3,995</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
-    <tr data-addr="379+South+5th+Street,+Brooklyn,+NY"><td>11</td><td><a href="https://nooklyn.com/listings/379-s-5th-st-brooklyn-ny-11211-usa-4r-williamsburg-7c312075-a2ed-47b7-9beb-3c3237f20f4d" target="_blank">379 S 5th St #4R</a></td><td>Williamsburg</td><td class="price">$4,500</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
-    <tr data-addr="145+Noble+Street,+Brooklyn,+NY"><td>12</td><td><a href="https://streeteasy.com/building/145-noble-street-brooklyn/17" target="_blank">145 Noble St #17</a></td><td>Greenpoint</td><td class="price">$4,599</td><td>45 min</td><td>37-39 min</td><td>45 min</td></tr>
-    <tr data-addr="3+Quincy+Street,+Brooklyn,+NY"><td>13</td><td><a href="https://streeteasy.com/building/3-quincy-street-brooklyn/1f" target="_blank">3 Quincy St #1F</a></td><td>Clinton Hill</td><td class="price">$4,750</td><td>~32 min</td><td>~56 min</td><td>56 min</td></tr>
-    <tr data-addr="41-24+29th+Street,+Long+Island+City,+Queens,+NY"><td>14</td><td><a href="https://streeteasy.com/building/41_24-29-street-long_island_city/4a" target="_blank">41-24 29th St #4A</a></td><td>LIC</td><td class="price">$4,095</td><td>~40 min</td><td>~20 min</td><td>40 min</td></tr>
+    <tr data-addr="West+50th+Street+and+7th+Avenue,+New+York,+NY"><td>1</td><td><a href="https://www.renthop.com/listings/beautiful-3-bedroom-2-bathroom-apartment-in-hells-kitchen/phc1/10919118" target="_blank">Hell's Kitchen duplex</a></td><td>Hell's Kitchen</td><td class="price">$4,250</td><td>~18 min</td><td>~22 min</td><td>22 min</td></tr>
+    <tr data-addr="103+Moore+Street,+Brooklyn,+NY"><td>2</td><td><a href="https://streeteasy.com/building/103-moore-street-brooklyn/3s" target="_blank">103/105 Moore St</a></td><td>Williamsburg</td><td class="price">$4,449 net</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
+    <tr data-addr="163+Ludlow+Street,+New+York,+NY"><td>3</td><td><a href="https://streeteasy.com/building/163-ludlow-street-new_york/ge" target="_blank">163 Ludlow St #GE</a></td><td>LES</td><td class="price">$5,845 net</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
+    <tr data-addr="103+Mosco+Street,+New+York,+NY"><td>4</td><td><a href="https://streeteasy.com/building/103-mosco-street-new_york/1" target="_blank">103 Mosco St #1</a></td><td>Chinatown</td><td class="price">$6,695</td><td>13 min</td><td>39-44 min</td><td>44 min</td></tr>
+    <tr data-addr="210+Rivington+Street,+New+York,+NY"><td>5</td><td><a href="https://streeteasy.com/building/210-rivington-street-new_york/16" target="_blank">210 Rivington St #16</a></td><td>LES</td><td class="price">$5,799</td><td>27-30 min</td><td>44-46 min</td><td>46 min</td></tr>
+    <tr data-addr="30-96+32nd+Street,+Astoria,+Queens,+NY"><td>6</td><td><a href="https://streeteasy.com/building/30_96-32-street-astoria/3" target="_blank">30-96 32nd St #3</a></td><td>Astoria</td><td class="price">$3,799</td><td>50 min</td><td>10 min</td><td>50 min</td></tr>
+    <tr data-addr="187+State+Street,+Brooklyn,+NY"><td>7</td><td><a href="https://streeteasy.com/building/187-state-street-brooklyn/3" target="_blank">187 State St #3</a></td><td>Dtwn Brooklyn</td><td class="price">$6,250</td><td>25 min</td><td>~53 min</td><td>53 min</td></tr>
+    <tr data-addr="21+Adelphi+Street,+Brooklyn,+NY"><td>8</td><td><a href="https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene" target="_blank">21 Adelphi St #4R</a></td><td>Fort Greene</td><td class="price">$3,667 net</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
+    <tr data-addr="183+Park+Avenue,+Brooklyn,+NY"><td>9</td><td><a href="https://streeteasy.com/building/183-park-avenue-brooklyn/2a" target="_blank">183 Park Ave #2A</a></td><td>Fort Greene</td><td class="price">$3,495</td><td>27-33 min</td><td>54-55 min</td><td>55 min</td></tr>
+    <tr data-addr="1057+Atlantic+Avenue,+Brooklyn,+NY"><td>10</td><td><a href="https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20" target="_blank">1057 Atlantic Ave PH20</a></td><td>Prospect Hts</td><td class="price">$5,820 net</td><td>~35 min</td><td>~55 min</td><td>55 min</td></tr>
+    <tr data-addr="39+Bushwick+Avenue,+Brooklyn,+NY"><td>11</td><td><a href="https://streeteasy.com/building/39-bushwick-avenue-brooklyn/1b" target="_blank">39 Bushwick Ave #1B</a></td><td>Williamsburg</td><td class="price">$3,995</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
+    <tr data-addr="379+South+5th+Street,+Brooklyn,+NY"><td>12</td><td><a href="https://nooklyn.com/listings/379-s-5th-st-brooklyn-ny-11211-usa-4r-williamsburg-7c312075-a2ed-47b7-9beb-3c3237f20f4d" target="_blank">379 S 5th St #4R</a></td><td>Williamsburg</td><td class="price">$4,500</td><td>27 min</td><td>42-45 min</td><td>45 min</td></tr>
+    <tr data-addr="145+Noble+Street,+Brooklyn,+NY"><td>13</td><td><a href="https://streeteasy.com/building/145-noble-street-brooklyn/17" target="_blank">145 Noble St #17</a></td><td>Greenpoint</td><td class="price">$4,599</td><td>45 min</td><td>37-39 min</td><td>45 min</td></tr>
+    <tr data-addr="3+Quincy+Street,+Brooklyn,+NY"><td>14</td><td><a href="https://streeteasy.com/building/3-quincy-street-brooklyn/1f" target="_blank">3 Quincy St #1F</a></td><td>Clinton Hill</td><td class="price">$4,750</td><td>~32 min</td><td>~56 min</td><td>56 min</td></tr>
+    <tr data-addr="545+West+148th+Street,+New+York,+NY"><td>15</td><td><a href="https://streeteasy.com/building/hamilton-court/4h" target="_blank">545 W 148th St #4H</a></td><td>Hamilton Heights</td><td class="price">$4,000</td><td>~30 min</td><td>~40 min</td><td>40 min</td></tr>
+    <tr data-addr="504+East+79th+Street,+New+York,+NY"><td>16</td><td><a href="https://streeteasy.com/building/504-east-79-street-new_york/2d" target="_blank">504 E 79th St #2D</a></td><td>UES</td><td class="price">$4,114</td><td>~27 min</td><td>~45 min</td><td>45 min</td></tr>
+    <tr data-addr="41-24+29th+Street,+Long+Island+City,+Queens,+NY"><td>17</td><td><a href="https://streeteasy.com/building/41_24-29-street-long_island_city/4a" target="_blank">41-24 29th St #4A</a></td><td>LIC</td><td class="price">$4,095</td><td>~40 min</td><td>~20 min</td><td>40 min</td></tr>
   </tbody>
 </table>
 </div>
@@ -535,6 +549,81 @@
 <!-- NEIGHBORHOOD LISTINGS -->
 <h2>All Listings by Neighborhood</h2>
 
+<!-- HELL'S KITCHEN / MIDTOWN WEST -->
+<div class="neighborhood" id="n-hellskitchen">
+  <div class="neighborhood-header" onclick="toggleNeighborhood('n-hellskitchen')">
+    <div>
+      <h3>Hell's Kitchen / Midtown West, Manhattan</h3>
+      <div class="commute">~18 min to Stuyvesant (C/E) &middot; ~22 min to Sinatra (N/W from Times Sq)</div>
+    </div>
+    <div class="header-right">
+      <span class="count">5 listings</span>
+      <span class="arrow">&#9660;</span>
+    </div>
+  </div>
+  <div class="neighborhood-body">
+    <table>
+      <thead><tr><th>Address</th><th>Unit</th><th>Price</th><th>Net Eff.</th><th>BR/BA</th><th>Sqft</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/beautiful-3-bedroom-2-bathroom-apartment-in-hells-kitchen/phc1/10919118','_blank')" data-price="4250" data-pets="yes">
+          <td><a href="https://www.renthop.com/listings/beautiful-3-bedroom-2-bathroom-apartment-in-hells-kitchen/phc1/10919118" target="_blank" onclick="event.stopPropagation()">Hell's Kitchen (near 50th/7th)</a></td>
+          <td>PHC1</td>
+          <td class="price">$4,250</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td><span class="tag tag-nofee">NO FEE</span> <span class="pet-yes">&#9989; Cats+Dogs</span> Duplex, private outdoor space, elevator</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/698-10-avenue-new_york/1c','_blank')" data-price="6360" data-pets="no">
+          <td><a href="https://streeteasy.com/building/698-10-avenue-new_york/1c" target="_blank" onclick="event.stopPropagation()">698 10th Ave</a></td>
+          <td>#1C</td>
+          <td class="price">$6,360</td>
+          <td class="net">&mdash;</td>
+          <td>3/1</td>
+          <td>1,000</td>
+          <td>Granite, SS appliances, oak floors, corner unit</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/riverbank-560-west-43-street-new_york/08c','_blank')" data-price="6495" data-pets="yes">
+          <td><a href="https://streeteasy.com/building/riverbank-560-west-43-street-new_york/08c" target="_blank" onclick="event.stopPropagation()">Riverbank, 560 W 43rd St</a></td>
+          <td>#8C</td>
+          <td class="price">$6,495</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>892</td>
+          <td><span class="tag tag-nofee">NO FEE</span> <span class="pet-yes">&#9989; Pets OK</span> Doorman, gym, pool</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/riverbank-560-west-43-street-new_york/3c','_blank')" data-price="6544" data-pets="yes">
+          <td><a href="https://streeteasy.com/building/riverbank-560-west-43-street-new_york/3c" target="_blank" onclick="event.stopPropagation()">Riverbank, 560 W 43rd St</a></td>
+          <td>#3C</td>
+          <td class="price">$6,544</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>892</td>
+          <td><span class="tag tag-nofee">NO FEE</span> <span class="pet-yes">&#9989; Pets OK</span> 300 sqft terrace, new floors</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/riverbank-560-west-43-street-new_york/06c','_blank')" data-price="6699" data-pets="yes">
+          <td><a href="https://streeteasy.com/building/riverbank-560-west-43-street-new_york/06c" target="_blank" onclick="event.stopPropagation()">Riverbank, 560 W 43rd St</a></td>
+          <td>#6C</td>
+          <td class="price">$6,699</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>892</td>
+          <td><span class="pet-yes">&#9989; Pets OK</span> Doorman, gym, pool, garage</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/451-west-50-street-new_york/2','_blank')" data-price="6900" data-pets="no">
+          <td><a href="https://streeteasy.com/building/451-west-50-street-new_york/2" target="_blank" onclick="event.stopPropagation()">451 W 50th St</a></td>
+          <td>#2</td>
+          <td class="price">$6,900</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>1,300</td>
+          <td>Duplex, 2 kitchens, private garden with magnolia tree</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <!-- ASTORIA / LIC -->
 <div class="neighborhood open" id="n-astoria">
   <div class="neighborhood-header" onclick="toggleNeighborhood('n-astoria')">
@@ -570,10 +659,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-new">NEW DEV</span> 2 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/11-14+35th+Avenue+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/11-14+35th+Avenue+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/nova-astoria/720','_blank')">
           <td><a href="https://streeteasy.com/building/nova-astoria/720" onclick="event.stopPropagation()">11-14 35th Ave (Nova Astoria)</a></td>
@@ -583,10 +668,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-new">NEW DEV</span> 2 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/11-14+35th+Avenue+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/11-14+35th+Avenue+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/71_19-ditmars-boulevard-east_elmhurst/1','_blank')">
           <td><a href="https://streeteasy.com/building/71_19-ditmars-boulevard-east_elmhurst/1" onclick="event.stopPropagation()">71-19 Ditmars Blvd</a></td>
@@ -596,10 +677,6 @@
           <td>3/2</td>
           <td>1,400</td>
           <td>Ditmars-Steinway</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/71-19+Ditmars+Boulevard+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/71-19+Ditmars+Boulevard+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/30_96-32-street-astoria/3','_blank')">
           <td><a href="https://streeteasy.com/building/30_96-32-street-astoria/3" onclick="event.stopPropagation()">30-96 32nd St</a></td>
@@ -609,10 +686,6 @@
           <td>3/1.5</td>
           <td>&mdash;</td>
           <td>Three-family, heat/HW incl</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/30-96+32nd+Street+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/30-96+32nd+Street+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/10_03-36-avenue-astoria/2','_blank')">
           <td><a href="https://streeteasy.com/building/10_03-36-avenue-astoria/2" target="_blank" onclick="event.stopPropagation()">10-03 36th Ave</a></td>
@@ -631,10 +704,6 @@
           <td>3/2</td>
           <td>1,700</td>
           <td>+$300 fee</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/30-88+30th+Street+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/30-88+30th+Street+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/34_06-broadway-astoria/3','_blank')">
           <td><a href="https://streeteasy.com/building/34_06-broadway-astoria/3" onclick="event.stopPropagation()">34-06 Broadway</a></td>
@@ -644,10 +713,6 @@
           <td>3/1</td>
           <td>1,000</td>
           <td><span class="tag tag-open">OPEN 3/28 12-1PM</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/34-06+Broadway+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/34-06+Broadway+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/20_05-hazen-street-east_elmhurst/3fl','_blank')">
           <td><a href="https://streeteasy.com/building/20_05-hazen-street-east_elmhurst/3fl" onclick="event.stopPropagation()">20-05 Hazen St</a></td>
@@ -657,10 +722,6 @@
           <td>3/2</td>
           <td>1,200</td>
           <td>+$150 fee</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/20-05+Hazen+Street+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/20-05+Hazen+Street+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/23_50-31-avenue-astoria/2f','_blank')">
           <td><a href="https://streeteasy.com/building/23_50-31-avenue-astoria/2f" onclick="event.stopPropagation()">23-50 31st Ave</a></td>
@@ -670,10 +731,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Three-family</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/23-50+31st+Avenue+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/23-50+31st+Avenue+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/23_83-37-street-astoria/2','_blank')">
           <td><a href="https://streeteasy.com/building/23_83-37-street-astoria/2" onclick="event.stopPropagation()">23-83 37th St</a></td>
@@ -683,10 +740,6 @@
           <td>3/2</td>
           <td>1,100</td>
           <td>Ditmars-Steinway</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/23-83+37th+Street+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/23-83+37th+Street+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/32_03-35-avenue-astoria/1','_blank')">
           <td><a href="https://streeteasy.com/building/32_03-35-avenue-astoria/1" onclick="event.stopPropagation()">32-03 35th Ave</a></td>
@@ -696,10 +749,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Near Sinatra</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/32-03+35th+Avenue+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/32-03+35th+Avenue+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://fabricastoria.com/','_blank')" data-price="3100" data-pets="no">
           <td><a href="https://fabricastoria.com/" target="_blank" onclick="event.stopPropagation()">Fabric Astoria (22-51 45th St)</a></td>
@@ -709,10 +758,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td><span class="tag tag-new">NEW DEV</span> In-unit W/D, sauna, 21K SF amenities. Call (646) 300-7245</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/22-51+45th+Street+Astoria+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/22-51+45th+Street+Astoria+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/41_24-29-street-long_island_city/4a','_blank')" data-price="4095" data-pets="no">
           <td><a href="https://streeteasy.com/building/41_24-29-street-long_island_city/4a" target="_blank" onclick="event.stopPropagation()">41-24 29th St, LIC</a></td>
@@ -722,10 +767,6 @@
           <td>3/?</td>
           <td>988</td>
           <td>+$95 fee</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/41-24+29th+Street+Long+Island+City+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/41-24+29th+Street+Long+Island+City+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/altalic-29_22-northern-boulevard-long_island_city/1202l','_blank')" data-price="5500" data-pets="no">
           <td><a href="https://streeteasy.com/building/altalic-29_22-northern-boulevard-long_island_city/1202l" target="_blank" onclick="event.stopPropagation()">AltaLIC, 29-22 Northern Blvd</a></td>
@@ -735,10 +776,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-new">NEW DEV</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/29-22+Northern+Boulevard+Long+Island+City+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/29-22+Northern+Boulevard+Long+Island+City+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/altalic-29_22-northern-boulevard-long_island_city/1211a','_blank')" data-price="5657" data-pets="no">
           <td><a href="https://streeteasy.com/building/altalic-29_22-northern-boulevard-long_island_city/1211a" target="_blank" onclick="event.stopPropagation()">AltaLIC, 29-22 Northern Blvd</a></td>
@@ -748,10 +785,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-new">NEW DEV</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/29-22+Northern+Boulevard+Long+Island+City+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/29-22+Northern+Boulevard+Long+Island+City+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/hunters-landing-lic/801','_blank')" data-price="6000" data-pets="no">
           <td><a href="https://streeteasy.com/building/hunters-landing-lic/801" target="_blank" onclick="event.stopPropagation()">Hunters Landing, LIC</a></td>
@@ -761,10 +794,6 @@
           <td>3/?</td>
           <td>1,000</td>
           <td>Hunters Point</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/Hunters+Landing+Long+Island+City+Queens+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/Hunters+Landing+Long+Island+City+Queens+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -806,10 +835,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/103+Mosco+Street+New+York+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/103+Mosco+Street+New+York+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -851,10 +876,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/210+Rivington+Street+New+York+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/210+Rivington+Street+New+York+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/126-rivington-street-new_york/5g','_blank')">
           <td><a href="https://streeteasy.com/building/126-rivington-street-new_york/5g" onclick="event.stopPropagation()">126 Rivington St</a></td>
@@ -864,10 +885,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/126+Rivington+Street+New+York+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/126+Rivington+Street+New+York+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/163-ludlow-street-new_york/ge','_blank')">
           <td><a href="https://streeteasy.com/building/163-ludlow-street-new_york/ge" onclick="event.stopPropagation()">163 Ludlow St</a></td>
@@ -877,10 +894,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>1 month free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/163+Ludlow+Street+New+York+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/163+Ludlow+Street+New+York+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/305-broome-street-new_york/3','_blank')">
           <td><a href="https://streeteasy.com/building/305-broome-street-new_york/3" onclick="event.stopPropagation()">303 Broome St</a></td>
@@ -890,10 +903,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>At budget limit</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/303+Broome+Street+New+York+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/303+Broome+Street+New+York+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -935,10 +944,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Mixed-use</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/39+Bushwick+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/39+Bushwick+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/379-s-5th-st-brooklyn-ny-11211-usa-4r-williamsburg-7c312075-a2ed-47b7-9beb-3c3237f20f4d','_blank')">
           <td><a href="https://nooklyn.com/listings/379-s-5th-st-brooklyn-ny-11211-usa-4r-williamsburg-7c312075-a2ed-47b7-9beb-3c3237f20f4d" onclick="event.stopPropagation()">379 S 5th St</a></td>
@@ -948,10 +953,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/379+South+5th+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/379+South+5th+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/103-moore-street-brooklyn/3u','_blank')">
           <td><a href="https://streeteasy.com/building/103-moore-street-brooklyn/3u" onclick="event.stopPropagation()">103 Moore St</a></td>
@@ -961,10 +962,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-new">NEW 2026</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/103+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/103+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/103-moore-street-brooklyn/3s','_blank')">
           <td><a href="https://streeteasy.com/building/103-moore-street-brooklyn/3s" onclick="event.stopPropagation()">103 Moore St</a></td>
@@ -974,10 +971,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>2 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/103+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/103+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-4b-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-4b-williamsburg" onclick="event.stopPropagation()">105 Moore St</a></td>
@@ -987,10 +980,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>6 units avail</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-4a-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-4a-williamsburg" onclick="event.stopPropagation()">105 Moore St</a></td>
@@ -1000,10 +989,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Same complex</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-3b-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-3b-williamsburg" onclick="event.stopPropagation()">105 Moore St</a></td>
@@ -1013,10 +998,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Same complex</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-3a-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-3a-williamsburg" onclick="event.stopPropagation()">105 Moore St</a></td>
@@ -1026,10 +1007,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Same complex</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-2b-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-2b-williamsburg" onclick="event.stopPropagation()">105 Moore St</a></td>
@@ -1039,10 +1016,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Same complex</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-2a-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/105-moore-st-brooklyn-ny-11206-usa-2a-williamsburg" onclick="event.stopPropagation()">105 Moore St</a></td>
@@ -1052,10 +1025,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Same complex</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/105+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/96-moore-st-brooklyn-ny-11206-usa-4a-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/96-moore-st-brooklyn-ny-11206-usa-4a-williamsburg" onclick="event.stopPropagation()">96 Moore St</a></td>
@@ -1065,10 +1034,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Adjacent bldg</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/96+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/96+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/96-moore-st-brooklyn-ny-11206-usa-3a-williamsburg','_blank')">
           <td><a href="https://nooklyn.com/listings/96-moore-st-brooklyn-ny-11206-usa-3a-williamsburg" onclick="event.stopPropagation()">96 Moore St</a></td>
@@ -1078,10 +1043,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Adjacent bldg</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/96+Moore+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/96+Moore+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/1035-flushing-avenue-brooklyn/3r','_blank')">
           <td><a href="https://streeteasy.com/building/1035-flushing-avenue-brooklyn/3r" onclick="event.stopPropagation()">1035 Flushing Ave</a></td>
@@ -1091,10 +1052,6 @@
           <td>3/1.5</td>
           <td>&mdash;</td>
           <td>+$250 fee</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1035+Flushing+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1035+Flushing+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/106-grattan-street-brooklyn/1l','_blank')">
           <td><a href="https://streeteasy.com/building/106-grattan-street-brooklyn/1l" onclick="event.stopPropagation()">106 Grattan St</a></td>
@@ -1104,10 +1061,6 @@
           <td>3/1.5</td>
           <td>&mdash;</td>
           <td>E. Williamsburg</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/106+Grattan+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/106+Grattan+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/83-beadel-street-brooklyn/1c','_blank')">
           <td><a href="https://streeteasy.com/building/83-beadel-street-brooklyn/1c" onclick="event.stopPropagation()">83 Beadel St</a></td>
@@ -1117,10 +1070,6 @@
           <td>3/3</td>
           <td>&mdash;</td>
           <td>E. Williamsburg</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/83+Beadel+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/83+Beadel+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/81-beadel-llc/1b','_blank')">
           <td><a href="https://streeteasy.com/building/81-beadel-llc/1b" onclick="event.stopPropagation()">81 Beadel St</a></td>
@@ -1130,10 +1079,6 @@
           <td>3/3</td>
           <td>&mdash;</td>
           <td><span class="tag tag-open">OPEN 3/29</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/81+Beadel+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/81+Beadel+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/16-meserole-street-brooklyn/2a','_blank')">
           <td><a href="https://streeteasy.com/building/16-meserole-street-brooklyn/2a" onclick="event.stopPropagation()">16 Meserole St</a></td>
@@ -1143,10 +1088,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/16+Meserole+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/16+Meserole+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/copper-lofts/475','_blank')">
           <td><a href="https://streeteasy.com/building/copper-lofts/475" onclick="event.stopPropagation()">255 Lorimer St (Copper Lofts)</a></td>
@@ -1156,10 +1097,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Copper Lofts</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/255+Lorimer+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/255+Lorimer+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -1201,10 +1138,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Three-family</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/183+Park+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/183+Park+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/129-park-avenue-brooklyn/3b','_blank')">
           <td><a href="https://streeteasy.com/building/129-park-avenue-brooklyn/3b" onclick="event.stopPropagation()">129 Park Ave</a></td>
@@ -1214,10 +1147,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Brooklyn Group</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/129+Park+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/129+Park+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/129-park-avenue-brooklyn/2a','_blank')">
           <td><a href="https://streeteasy.com/building/129-park-avenue-brooklyn/2a" onclick="event.stopPropagation()">129 Park Ave</a></td>
@@ -1227,10 +1156,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Brooklyn Group</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/129+Park+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/129+Park+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene','_blank')">
           <td><a href="https://nooklyn.com/listings/21-adelphi-st-brooklyn-ny-11205-usa-4r-fort-greene" onclick="event.stopPropagation()">21 Adelphi St</a></td>
@@ -1240,10 +1165,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Net eff w/ concession</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/21+Adelphi+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/21+Adelphi+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/21-adelphi-street-brooklyn/4m','_blank')">
           <td><a href="https://streeteasy.com/building/21-adelphi-street-brooklyn/4m" onclick="event.stopPropagation()">21 Adelphi St</a></td>
@@ -1253,10 +1174,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-open">OPEN 3/28 9AM-7PM</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/21+Adelphi+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/21+Adelphi+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/25-adelphi-street-brooklyn/4r','_blank')">
           <td><a href="https://streeteasy.com/building/25-adelphi-street-brooklyn/4r" onclick="event.stopPropagation()">25 Adelphi St</a></td>
@@ -1266,10 +1183,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/25+Adelphi+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/25+Adelphi+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/129-park-avenue-brooklyn/3a','_blank')">
           <td><a href="https://streeteasy.com/building/129-park-avenue-brooklyn/3a" onclick="event.stopPropagation()">129 Park Ave</a></td>
@@ -1279,10 +1192,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/129+Park+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/129+Park+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/117-carlton-avenue-brooklyn/2f','_blank')">
           <td><a href="https://streeteasy.com/building/117-carlton-avenue-brooklyn/2f" onclick="event.stopPropagation()">117 Carlton Ave</a></td>
@@ -1292,10 +1201,6 @@
           <td>3/1.5</td>
           <td>&mdash;</td>
           <td><span class="tag tag-open">OPEN 3/28 10AM-5PM</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/117+Carlton+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/117+Carlton+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/45-cumberland-street-brooklyn/2','_blank')">
           <td><a href="https://streeteasy.com/building/45-cumberland-street-brooklyn/2" onclick="event.stopPropagation()">45 Cumberland St</a></td>
@@ -1305,10 +1210,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Three-family</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/45+Cumberland+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/45+Cumberland+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -1350,10 +1251,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/145+Noble+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/145+Noble+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/56-sutton-street-brooklyn/3f','_blank')">
           <td><a href="https://streeteasy.com/building/56-sutton-street-brooklyn/3f" onclick="event.stopPropagation()">56 Sutton St</a></td>
@@ -1363,10 +1260,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Three-family</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/56+Sutton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/56+Sutton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/6-sutton-street-brooklyn/6','_blank')">
           <td><a href="https://streeteasy.com/building/6-sutton-street-brooklyn/6" onclick="event.stopPropagation()">6 Sutton St</a></td>
@@ -1376,10 +1269,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>0.5 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/6+Sutton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/6+Sutton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/188-freeman-street-brooklyn/1r','_blank')">
           <td><a href="https://streeteasy.com/building/188-freeman-street-brooklyn/1r" onclick="event.stopPropagation()">188 Freeman St</a></td>
@@ -1389,10 +1278,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Mixed-use</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/188+Freeman+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/188+Freeman+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/58-sutton-street-brooklyn/2','_blank')">
           <td><a href="https://streeteasy.com/building/58-sutton-street-brooklyn/2" onclick="event.stopPropagation()">58 Sutton St</a></td>
@@ -1402,10 +1287,6 @@
           <td>3/2</td>
           <td>1,000</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/58+Sutton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/58+Sutton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/74-sutton-street-brooklyn/2','_blank')">
           <td><a href="https://streeteasy.com/building/74-sutton-street-brooklyn/2" onclick="event.stopPropagation()">74 Sutton St</a></td>
@@ -1415,10 +1296,6 @@
           <td>3/2</td>
           <td>1,000</td>
           <td>+$400 fee</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/74+Sutton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/74+Sutton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -1460,10 +1337,6 @@
           <td>3/1.5</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/3+Quincy+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/3+Quincy+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/1057-fulton-street-brooklyn/4a','_blank')">
           <td><a href="https://streeteasy.com/building/1057-fulton-street-brooklyn/4a" onclick="event.stopPropagation()">1057 Fulton St</a></td>
@@ -1473,10 +1346,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1057+Fulton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1057+Fulton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -1518,10 +1387,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Price dropped from $6,500</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/187+State+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/187+State+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -1563,10 +1428,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span> Crown Heights &mdash; verify legitimacy</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1322+Prospect+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1322+Prospect+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://newyork.craigslist.org/brk/apa/d/brooklyn-cheapest-bed-you-will-find-d/7921515159.html','_blank')" data-price="2799" data-pets="yes">
           <td><a href="https://newyork.craigslist.org/brk/apa/d/brooklyn-cheapest-bed-you-will-find-d/7921515159.html" target="_blank" onclick="event.stopPropagation()">1614 Prospect Pl</a></td>
@@ -1576,10 +1437,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span> <span class="pet-yes">&#9989; Cats+Dogs</span> W/D, utilities incl. Craigslist. Call Adam 917-817-9529</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1614+Prospect+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1614+Prospect+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/1889-eastern-pkwy-brooklyn-ny-11233-usa-2-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/1889-eastern-pkwy-brooklyn-ny-11233-usa-2-bedford-stuyvesant" onclick="event.stopPropagation()">1889 Eastern Pkwy</a></td>
@@ -1589,10 +1446,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-pets">ALL PETS</span> renovated</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1889+Eastern+Parkway+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1889+Eastern+Parkway+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/38-nostrand-ave-brooklyn-ny-11205-usa-5-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/38-nostrand-ave-brooklyn-ny-11205-usa-5-bedford-stuyvesant" onclick="event.stopPropagation()">38 Nostrand Ave</a></td>
@@ -1602,10 +1455,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Bed-Stuy</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/38+Nostrand+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/38+Nostrand+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/1329-pacific-street/3f/62031073','_blank')" data-price="3399" data-pets="yes">
           <td><a href="https://www.renthop.com/listings/1329-pacific-street/3f/62031073" target="_blank" onclick="event.stopPropagation()">1329 Pacific St</a></td>
@@ -1615,10 +1464,6 @@
           <td>3/1+bsmt</td>
           <td>&mdash;</td>
           <td><span class="pet-yes">&#9989; Pet-friendly</span> Central AC, hardwood, SS appliances</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1329+Pacific+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1329+Pacific+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/705-st-marks-avenue/4c/73294881','_blank')" data-price="3400" data-pets="no">
           <td><a href="https://www.renthop.com/listings/705-st-marks-avenue/4c/73294881" target="_blank" onclick="event.stopPropagation()">705 St Marks Ave</a></td>
@@ -1628,10 +1473,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span> Crown Heights, near Nostrand Av station</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/705+St+Marks+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/705+St+Marks+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/1066-putnam-ave-brooklyn-ny-11221-usa-1r-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/1066-putnam-ave-brooklyn-ny-11221-usa-1r-bedford-stuyvesant" onclick="event.stopPropagation()">1066 Putnam Ave</a></td>
@@ -1641,10 +1482,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td>Bed-Stuy</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1066+Putnam+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1066+Putnam+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/1635-prospect-pl-brooklyn-ny-11233-usa-1-crown-heights','_blank')">
           <td><a href="https://nooklyn.com/listings/1635-prospect-pl-brooklyn-ny-11233-usa-1-crown-heights" onclick="event.stopPropagation()">1635 Prospect Pl</a></td>
@@ -1654,10 +1491,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td>Crown Heights</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1635+Prospect+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1635+Prospect+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/518-chauncey-street-brooklyn/3','_blank')">
           <td><a href="https://streeteasy.com/building/518-chauncey-street-brooklyn/3" onclick="event.stopPropagation()">518 Chauncey St</a></td>
@@ -1667,10 +1500,6 @@
           <td>3/2</td>
           <td>1,000</td>
           <td>Ocean Hill</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/518+Chauncey+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/518+Chauncey+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/1040-park-place-brooklyn/a4','_blank')">
           <td><a href="https://streeteasy.com/building/1040-park-place-brooklyn/a4" onclick="event.stopPropagation()">1040 Park Pl</a></td>
@@ -1680,10 +1509,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Crown Heights</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1040+Park+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1040+Park+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/199-malcolm-x-boulevard-brooklyn/3f','_blank')">
           <td><a href="https://streeteasy.com/building/199-malcolm-x-boulevard-brooklyn/3f" onclick="event.stopPropagation()">199 Malcolm X Blvd</a></td>
@@ -1693,10 +1518,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>Stuyvesant Heights</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/199+Malcolm+X+Boulevard+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/199+Malcolm+X+Boulevard+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/1698-pacific-street-brooklyn/3c','_blank')">
           <td><a href="https://streeteasy.com/building/1698-pacific-street-brooklyn/3c" onclick="event.stopPropagation()">1698 Pacific St</a></td>
@@ -1706,10 +1527,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Weeksville</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1698+Pacific+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1698+Pacific+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/2008-fulton-st-brooklyn-ny-11233-usa-b1-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/2008-fulton-st-brooklyn-ny-11233-usa-b1-bedford-stuyvesant" onclick="event.stopPropagation()">2008 Fulton St</a></td>
@@ -1719,10 +1536,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td>Concession</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/2008+Fulton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/2008+Fulton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/227-thomas-s-boyland-st-brooklyn-ny-11233-usa-2-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/227-thomas-s-boyland-st-brooklyn-ny-11233-usa-2-bedford-stuyvesant" onclick="event.stopPropagation()">227 Thomas S Boyland St</a></td>
@@ -1732,10 +1545,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td>Concession</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/227+Thomas+S+Boyland+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/227+Thomas+S+Boyland+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/840a-monroe-street-brooklyn/2','_blank')">
           <td><a href="https://streeteasy.com/building/840a-monroe-street-brooklyn/2" onclick="event.stopPropagation()">840a Monroe St</a></td>
@@ -1745,10 +1554,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>0.93 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/840+Monroe+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/840+Monroe+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/816-prospect-pl/3b/15131807','_blank')" data-price="3850" data-pets="no">
           <td><a href="https://www.renthop.com/listings/816-prospect-pl/3b/15131807" target="_blank" onclick="event.stopPropagation()">816 Prospect Pl</a></td>
@@ -1758,10 +1563,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td><span class="tag tag-stabilized">RENT STABILIZED</span> <span class="tag tag-nofee">NO FEE</span> Exposed brick</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/816+Prospect+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/816+Prospect+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/1675-sterling-place/1/15491956','_blank')" data-price="4200" data-pets="no">
           <td><a href="https://www.renthop.com/listings/1675-sterling-place/1/15491956" target="_blank" onclick="event.stopPropagation()">1675 Sterling Pl</a></td>
@@ -1771,10 +1572,6 @@
           <td>3/3</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span> Duplex, backyard, parking, gut reno</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1675+Sterling+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1675+Sterling+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/679-sterling-place/1l/65399299','_blank')" data-price="4499" data-pets="no">
           <td><a href="https://www.renthop.com/listings/679-sterling-place/1l/65399299" target="_blank" onclick="event.stopPropagation()">679 Sterling Pl</a></td>
@@ -1784,10 +1581,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span> Huge duplex, private backyard, exposed brick</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/679+Sterling+Place+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/679+Sterling+Place+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/43-kingston-ave-brooklyn-ny-11213-usa-1a-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/43-kingston-ave-brooklyn-ny-11213-usa-1a-bedford-stuyvesant" onclick="event.stopPropagation()">43 Kingston Ave</a></td>
@@ -1797,10 +1590,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-pets">ALL PETS</span> <span class="tag tag-nofee">NO FEE</span> duplex, W/D</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/43+Kingston+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/43+Kingston+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/43-kingston-ave-brooklyn-ny-11213-usa-1b-bedford-stuyvesant','_blank')">
           <td><a href="https://nooklyn.com/listings/43-kingston-ave-brooklyn-ny-11213-usa-1b-bedford-stuyvesant" onclick="event.stopPropagation()">43 Kingston Ave</a></td>
@@ -1810,10 +1599,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-pets">ALL PETS</span> <span class="tag tag-nofee">NO FEE</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/43+Kingston+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/43+Kingston+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/botanica-931-carroll-street-brooklyn/c314','_blank')">
           <td><a href="https://streeteasy.com/building/botanica-931-carroll-street-brooklyn/c314" onclick="event.stopPropagation()">931 Carroll St (The Botanica)</a></td>
@@ -1823,10 +1608,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>1 month free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/931+Carroll+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/931+Carroll+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20','_blank')">
           <td><a href="https://streeteasy.com/building/atlanticbk-1057-atlantic-avenue-brooklyn/ph20" onclick="event.stopPropagation()">1057 Atlantic Ave (AtlanticBK)</a></td>
@@ -1836,10 +1617,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td><span class="tag tag-penthouse">PENTHOUSE</span> <span class="tag tag-pets">PETS OK</span> 35K SF amenities</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1057+Atlantic+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1057+Atlantic+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/the-arcadian/529','_blank')">
           <td><a href="https://streeteasy.com/building/the-arcadian/529" onclick="event.stopPropagation()">975 Nostrand Ave (The Arcadian)</a></td>
@@ -1849,10 +1626,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>1.5 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/975+Nostrand+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/975+Nostrand+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -1894,10 +1667,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/325+Eldert+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/325+Eldert+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/325-eldert-street-brooklyn/2h','_blank')">
           <td><a href="https://streeteasy.com/building/325-eldert-street-brooklyn/2h" onclick="event.stopPropagation()">325 Eldert St</a></td>
@@ -1907,10 +1676,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/325+Eldert+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/325+Eldert+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/225-eldert-street-brooklyn/2b','_blank')">
           <td><a href="https://streeteasy.com/building/225-eldert-street-brooklyn/2b" onclick="event.stopPropagation()">225 Eldert St</a></td>
@@ -1920,10 +1685,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/225+Eldert+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/225+Eldert+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/1346-hancock-st-brooklyn-ny-11237-usa-3l-bushwick','_blank')">
           <td><a href="https://nooklyn.com/listings/1346-hancock-st-brooklyn-ny-11237-usa-3l-bushwick" onclick="event.stopPropagation()">1346 Hancock St</a></td>
@@ -1933,10 +1694,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1346+Hancock+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1346+Hancock+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/108-eldert-street-brooklyn/2f','_blank')">
           <td><a href="https://streeteasy.com/building/108-eldert-street-brooklyn/2f" onclick="event.stopPropagation()">108 Eldert St</a></td>
@@ -1946,10 +1703,6 @@
           <td>3/1</td>
           <td>&mdash;</td>
           <td>1 month free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/108+Eldert+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/108+Eldert+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://nooklyn.com/listings/1439-myrtle-ave-brooklyn-ny-11237-usa-2f-bushwick-31c007e6-66ea-4351-bed4-07805d07db45','_blank')">
           <td><a href="https://nooklyn.com/listings/1439-myrtle-ave-brooklyn-ny-11237-usa-2f-bushwick-31c007e6-66ea-4351-bed4-07805d07db45" onclick="event.stopPropagation()">1439 Myrtle Ave</a></td>
@@ -1959,10 +1712,6 @@
           <td>3/?</td>
           <td>&mdash;</td>
           <td><span class="tag tag-nofee">NO FEE</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1439+Myrtle+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1439+Myrtle+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/1198-greene-avenue/3f/75035575','_blank')">
           <td><a href="https://www.renthop.com/listings/1198-greene-avenue/3f/75035575" onclick="event.stopPropagation()">1198 Greene Ave</a></td>
@@ -1972,10 +1721,6 @@
           <td>3/2</td>
           <td>1,200</td>
           <td><span class="tag tag-nofee">NO FEE</span></td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1198+Greene+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1198+Greene+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/1012-halsey-street-brooklyn/2','_blank')">
           <td><a href="https://streeteasy.com/building/1012-halsey-street-brooklyn/2" onclick="event.stopPropagation()">1012 Halsey St</a></td>
@@ -1985,10 +1730,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>1.5 months free</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/1012+Halsey+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/1012+Halsey+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/355-grove-street-brooklyn/1a','_blank')">
           <td><a href="https://streeteasy.com/building/355-grove-street-brooklyn/1a" onclick="event.stopPropagation()">355 Grove St</a></td>
@@ -1998,10 +1739,6 @@
           <td>3/3.5</td>
           <td>&mdash;</td>
           <td>&mdash;</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/355+Grove+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/355+Grove+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -2096,6 +1833,213 @@
           <td>3/1</td>
           <td>1,200</td>
           <td>Sunnyside, two-family</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- UPPER WEST SIDE -->
+<div class="neighborhood" id="n-uws">
+  <div class="neighborhood-header" onclick="toggleNeighborhood('n-uws')">
+    <div>
+      <h3>Upper West Side, Manhattan</h3>
+      <div class="commute">~28 min to Stuyvesant (1/2/3) &middot; ~38 min to Sinatra (1&rarr;Times Sq&rarr;N/W)</div>
+    </div>
+    <div class="header-right">
+      <span class="count">3 listings</span>
+      <span class="arrow">&#9660;</span>
+    </div>
+  </div>
+  <div class="neighborhood-body">
+    <table>
+      <thead><tr><th>Address</th><th>Unit</th><th>Price</th><th>Net Eff.</th><th>BR/BA</th><th>Sqft</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr class="clickable-row" onclick="window.open('https://www.renthop.com/listings/208-west-82nd-street/1/68890242','_blank')" data-price="4300" data-pets="unknown">
+          <td><a href="https://www.renthop.com/listings/208-west-82nd-street/1/68890242" target="_blank" onclick="event.stopPropagation()">208 W 82nd St</a></td>
+          <td>#1C</td>
+          <td class="price">$4,300</td>
+          <td class="net">&mdash;</td>
+          <td>3/?</td>
+          <td>&mdash;</td>
+          <td>Duplex, lofted, near Riverside Park</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/249-west-109-street-new_york','_blank')" data-price="5400" data-pets="yes">
+          <td><a href="https://streeteasy.com/building/249-west-109-street-new_york" target="_blank" onclick="event.stopPropagation()">249 W 109th St</a></td>
+          <td>#3E</td>
+          <td class="price">$5,400</td>
+          <td class="net">&mdash;</td>
+          <td>3/?</td>
+          <td>&mdash;</td>
+          <td><span class="tag tag-pets">ALL PETS</span> <span class="tag tag-nofee">NO FEE</span></td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/515-cathedral-parkway-new_york/10g','_blank')" data-price="6000" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/515-cathedral-parkway-new_york/10g" target="_blank" onclick="event.stopPropagation()">515 Cathedral Pkwy</a></td>
+          <td>#10G</td>
+          <td class="price">$6,000</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>1,300</td>
+          <td>Morningside Heights</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- UPPER EAST SIDE -->
+<div class="neighborhood" id="n-ues">
+  <div class="neighborhood-header" onclick="toggleNeighborhood('n-ues')">
+    <div>
+      <h3>Upper East Side, Manhattan</h3>
+      <div class="commute">~27 min to Stuyvesant (4/5/6) &middot; ~45 min to Sinatra (Q&rarr;N/W or 6&rarr;7&rarr;N)</div>
+    </div>
+    <div class="header-right">
+      <span class="count">3 listings</span>
+      <span class="arrow">&#9660;</span>
+    </div>
+  </div>
+  <div class="neighborhood-body">
+    <table>
+      <thead><tr><th>Address</th><th>Unit</th><th>Price</th><th>Net Eff.</th><th>BR/BA</th><th>Sqft</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/504-east-79-street-new_york/2d','_blank')" data-price="4114" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/504-east-79-street-new_york/2d" target="_blank" onclick="event.stopPropagation()">504 E 79th St</a></td>
+          <td>#2D</td>
+          <td class="price">$4,114</td>
+          <td class="net">&mdash;</td>
+          <td>3/1</td>
+          <td>&mdash;</td>
+          <td>Lenox Hill, owner listing</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/413-east-90-street-new_york/5s','_blank')" data-price="5400" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/413-east-90-street-new_york/5s" target="_blank" onclick="event.stopPropagation()">413 E 90th St</a></td>
+          <td>#5S</td>
+          <td class="price">$5,400</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>Yorkville</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/55-east-95-street-new_york/2b','_blank')" data-price="6995" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/55-east-95-street-new_york/2b" target="_blank" onclick="event.stopPropagation()">55 E 95th St</a></td>
+          <td>#2B</td>
+          <td class="price">$6,995</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>Carnegie Hill</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- HARLEM / HAMILTON HEIGHTS / MANHATTANVILLE -->
+<div class="neighborhood" id="n-harlem">
+  <div class="neighborhood-header" onclick="toggleNeighborhood('n-harlem')">
+    <div>
+      <h3>Harlem / Hamilton Heights / Manhattanville, Manhattan</h3>
+      <div class="commute">~30 min to Stuyvesant (A/C/1) &middot; ~40 min to Sinatra (A&rarr;Times Sq&rarr;N/W)</div>
+    </div>
+    <div class="header-right">
+      <span class="count">10 listings</span>
+      <span class="arrow">&#9660;</span>
+    </div>
+  </div>
+  <div class="neighborhood-body">
+    <table>
+      <thead><tr><th>Address</th><th>Unit</th><th>Price</th><th>Net Eff.</th><th>BR/BA</th><th>Sqft</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/hamilton-court/4h','_blank')" data-price="4000" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/hamilton-court/4h" target="_blank" onclick="event.stopPropagation()">545 W 148th St</a></td>
+          <td>#4H</td>
+          <td class="price">$4,000</td>
+          <td class="net">&mdash;</td>
+          <td>3/1</td>
+          <td>1,000</td>
+          <td>Hamilton Heights</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/hamilton-court/4d','_blank')" data-price="4000" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/hamilton-court/4d" target="_blank" onclick="event.stopPropagation()">545 W 148th St</a></td>
+          <td>#4D</td>
+          <td class="price">$4,000</td>
+          <td class="net">&mdash;</td>
+          <td>3/1</td>
+          <td>900</td>
+          <td>Hamilton Heights</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/524-west-134th/5bb','_blank')" data-price="4495" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/524-west-134th/5bb" target="_blank" onclick="event.stopPropagation()">524 W 134th St</a></td>
+          <td>#5BB</td>
+          <td class="price">$4,495</td>
+          <td class="net">$4,074</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>1.5mo free, new dev</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/524-west-134th/4c','_blank')" data-price="4600" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/524-west-134th/4c" target="_blank" onclick="event.stopPropagation()">524 W 134th St</a></td>
+          <td>#4C</td>
+          <td class="price">$4,600</td>
+          <td class="net">$4,271</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>1mo free, new dev</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/524-west-134th/1cc','_blank')" data-price="4650" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/524-west-134th/1cc" target="_blank" onclick="event.stopPropagation()">524 W 134th St</a></td>
+          <td>#1CC</td>
+          <td class="price">$4,650</td>
+          <td class="net">$4,318</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>1mo free, new dev</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/3333d-broadway-manhattanville/d19c','_blank')" data-price="4750" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/3333d-broadway-manhattanville/d19c" target="_blank" onclick="event.stopPropagation()">3333d Broadway</a></td>
+          <td>#D19C</td>
+          <td class="price">$4,750</td>
+          <td class="net">&mdash;</td>
+          <td>3/1.5</td>
+          <td>&mdash;</td>
+          <td>Manhattanville</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/the-maxwell-on-118/7d','_blank')" data-price="5000" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/the-maxwell-on-118/7d" target="_blank" onclick="event.stopPropagation()">402 E 118th St</a></td>
+          <td>#7D</td>
+          <td class="price">$5,000</td>
+          <td class="net">$4,583</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>East Harlem, 2mo free</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/hubb125-60-west-125th-street-new_york/806','_blank')" data-price="5130" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/hubb125-60-west-125th-street-new_york/806" target="_blank" onclick="event.stopPropagation()">60 W 125th St</a></td>
+          <td>#806</td>
+          <td class="price">$5,130</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>South Harlem</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/1440-amsterdam/1808','_blank')" data-price="6595" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/1440-amsterdam/1808" target="_blank" onclick="event.stopPropagation()">1440 Amsterdam Ave</a></td>
+          <td>#1808</td>
+          <td class="price">$6,595</td>
+          <td class="net">$5,771</td>
+          <td>3/2</td>
+          <td>&mdash;</td>
+          <td>2mo free, new dev</td>
+        </tr>
+        <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/92-morningside-avenue-new_york/5f','_blank')" data-price="6650" data-pets="unknown">
+          <td><a href="https://streeteasy.com/building/92-morningside-avenue-new_york/5f" target="_blank" onclick="event.stopPropagation()">92 Morningside Ave</a></td>
+          <td>#5F</td>
+          <td class="price">$6,650</td>
+          <td class="net">&mdash;</td>
+          <td>3/2</td>
+          <td>1,300</td>
+          <td>South Harlem</td>
         </tr>
       </tbody>
     </table>
@@ -2329,10 +2273,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>In-unit W/D, doorman</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/898+New+York+Avenue+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/898+New+York+Avenue+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
         <tr class="clickable-row" onclick="window.open('https://streeteasy.com/building/the-agora/5g','_blank')">
           <td><a href="https://streeteasy.com/building/the-agora/5g" onclick="event.stopPropagation()">2667 Fulton St (The Agora)</a></td>
@@ -2342,10 +2282,6 @@
           <td>3/2</td>
           <td>&mdash;</td>
           <td>Cypress Hills</td>
-          <td class="commute-links">
-            <a href="https://www.google.com/maps/dir/2667+Fulton+Street+Brooklyn+NY/345+Chambers+Street,+New+York,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>
-            <a href="https://www.google.com/maps/dir/2667+Fulton+Street+Brooklyn+NY/35-12+35th+Avenue,+Astoria,+NY/data=!4m2!4m1!3e3" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -2358,6 +2294,7 @@
 
 <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;"><strong style="color:var(--accent)">StreetEasy</strong></p>
 <div class="search-links">
+  <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/hells-kitchen" target="_blank">Hell's Kitchen</a>
   <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/astoria" target="_blank">Astoria</a>
   <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/long-island-city" target="_blank">LIC</a>
   <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/williamsburg" target="_blank">Williamsburg</a>
@@ -2368,6 +2305,9 @@
   <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/park-slope" target="_blank">Park Slope</a>
   <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/sunnyside-queens" target="_blank">Sunnyside</a>
   <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/les" target="_blank">Lower East Side</a>
+  <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/upper-west-side" target="_blank">UWS</a>
+  <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/upper-east-side" target="_blank">UES</a>
+  <a href="https://streeteasy.com/3-bedroom-apartments-for-rent/harlem" target="_blank">Harlem</a>
 </div>
 
 <p style="font-size:0.8rem; color:var(--text-muted); margin: 1rem 0 0.25rem;"><strong style="color:var(--accent)">Nooklyn</strong></p>
@@ -2405,8 +2345,7 @@
     el.classList.toggle('open');
   }
 
-  // Auto-add Citymapper commute links to every listing row
-  (function() {
+    // Add commute columns to neighborhood tables
     const stuy = '345+Chambers+Street,+New+York,+NY';
     const sinatra = '35-12+35th+Avenue,+Astoria,+NY';
     const transit = '/data=!4m2!4m1!3e3';
@@ -2416,7 +2355,48 @@
       'n-les': 'New+York,+NY',
       'n-sunnyside': 'Queens,+NY',
       'n-eastvillage': 'New+York,+NY',
+      'n-hellskitchen': 'New+York,+NY',
+      'n-uws': 'New+York,+NY',
+      'n-ues': 'New+York,+NY',
+      'n-harlem': 'New+York,+NY',
     };
+
+    // Commute times by neighborhood (verified via Google Maps)
+    const commutes = {
+      'n-hellskitchen': ['~18 min', '~22 min'],
+      'n-astoria': ['~50 min', '~10 min'],
+      'n-chinatown': ['~13 min', '~42 min'],
+      'n-les': ['~28 min', '~45 min'],
+      'n-williamsburg': ['~27 min', '~45 min'],
+      'n-fortgreene': ['~30 min', '~55 min'],
+      'n-greenpoint': ['~45 min', '~38 min'],
+      'n-clintonhill': ['~32 min', '~56 min'],
+      'n-downtown': ['~25 min', '~53 min'],
+      'n-bedstuycrown': ['~38 min', '~1h 7m'],
+      'n-bushwick': ['~38 min', '~58 min'],
+      'n-sunnyside': ['~51 min', '~18 min'],
+      'n-eastvillage': ['~25 min', '~48 min'],
+      'n-parkslope': ['~30 min', '~55 min'],
+      'n-prospectheights': ['~35 min', '~55 min'],
+      'n-other': ['—', '—'],
+      'n-uws': ['~28 min', '~38 min'],
+      'n-ues': ['~27 min', '~45 min'],
+      'n-harlem': ['~30 min', '~40 min'],
+    };
+
+    // Add header columns
+    document.querySelectorAll('.neighborhood-body thead tr').forEach(tr => {
+      const hood = tr.closest('.neighborhood');
+      if (!hood) return;
+      const thStuy = document.createElement('th');
+      thStuy.textContent = 'To Stuy';
+      tr.appendChild(thStuy);
+      const thSin = document.createElement('th');
+      thSin.textContent = 'To Sinatra';
+      tr.appendChild(thSin);
+    });
+
+    // Add commute cells to each listing row
     document.querySelectorAll('.neighborhood-body tbody tr').forEach(tr => {
       const addrCell = tr.querySelector('td:first-child');
       if (!addrCell) return;
@@ -2426,14 +2406,18 @@
       const hoodId = hood ? hood.id : '';
       const borough = boroughs[hoodId] || 'Brooklyn,+NY';
       const enc = (addr + ', ' + borough.replace(/\+/g, ' ')).replace(/\s+/g, '+');
-      const td = document.createElement('td');
-      td.className = 'commute-links';
-      td.innerHTML =
-        '<a href="https://www.google.com/maps/dir/' + enc + '/' + stuy + transit + '" target="_blank" class="cm-link cm-stuy" title="Commute to Stuyvesant">S</a>' +
-        '<a href="https://www.google.com/maps/dir/' + enc + '/' + sinatra + transit + '" target="_blank" class="cm-link cm-sin" title="Commute to Sinatra">F</a>';
-      tr.appendChild(td);
+      const times = commutes[hoodId] || ['—', '—'];
+
+      const tdStuy = document.createElement('td');
+      tdStuy.innerHTML = '<a href="https://www.google.com/maps/dir/' + enc + '/' + stuy + transit + '" target="_blank" class="cm-link-text">' + times[0] + '</a>';
+      tr.appendChild(tdStuy);
+
+      const tdSin = document.createElement('td');
+      tdSin.innerHTML = '<a href="https://www.google.com/maps/dir/' + enc + '/' + sinatra + transit + '" target="_blank" class="cm-link-text">' + times[1] + '</a>';
+      tr.appendChild(tdSin);
     });
-    // Linkify commute times in ranking table
+
+        // Linkify commute times in ranking table
     document.querySelectorAll('#commute-ranking tr[data-addr]').forEach(tr => {
       const addr = tr.dataset.addr;
       const cells = tr.querySelectorAll('td');
